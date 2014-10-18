@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TwitterAtGlance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="loginwithtwitter">Login with Twitter</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="connection_error">Connection Error, Please connect to the Internet</string>
+    <string name="title_activity_timeline">TimelineActivity</string>
+    <string name="title_activity_twitter_web_view">TwitterWebViewActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+
+</resources>

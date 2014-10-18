@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card"
+    android:id="@+id/newsLayout"
+    android:weightSum="1"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/newsImage"
+        android:layout_marginTop="12dp"
+         />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Headlines #Breaking News"
+        android:id="@+id/txtHeadlines"
+        android:layout_marginLeft="3dp"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtPreview"
+        android:layout_weight="0.35"
+        android:layout_marginLeft="3dp"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtNewsname"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txtNewshandle"
+        android:textColor="@color/orange"
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="3dp"
+        android:layout_margin="3dp" />
+</LinearLayout>

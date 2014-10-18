@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avaneesh.apps.twitteratglance.HomeActivity">
+     <LinearLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/faintGrey">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Top Tweets"
+                android:id="@+id/txtTopTweets"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:textColor="@color/orange"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="8dp"
+                android:visibility="gone" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:id="@+id/separator"
+                android:layout_below="@+id/txtTopTweets"
+                android:background="@color/actionBarcolor"
+                android:visibility="gone" />
+         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            >
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/topTweets"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

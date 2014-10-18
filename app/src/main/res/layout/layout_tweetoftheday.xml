@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/TODlayout"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text='"Tweet of the Day"'
+            android:id="@+id/tweetoftheday"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_below="@+id/TODpropic"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerVertical="true"
+            android:autoLink="web" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/TODName"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/TODpropic"
+            android:layout_toEndOf="@+id/TODpropic"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/TODpropic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/stub"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/TODHandle"
+            android:layout_below="@+id/TODName"
+            android:layout_toRightOf="@+id/TODpropic"
+            android:layout_toEndOf="@+id/TODpropic"
+            android:textColor="@color/faintGrey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TODTime"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#TweetOfTheDay"
+            android:id="@+id/textView"
+            android:layout_alignBottom="@+id/TODTime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp" />
+    </RelativeLayout>
+</LinearLayout>
